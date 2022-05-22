@@ -1,5 +1,9 @@
-import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
+import { After, Given, When, Then } from "cypress-cucumber-preprocessor/steps";
 import formPage from "../../pages/form.page";
+
+After(() => {
+    cy.screenshot();
+});
 
 Given("que o usuário acessa a página de criação", () => {
     formPage.accessForms();

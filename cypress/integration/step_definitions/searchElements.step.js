@@ -1,5 +1,9 @@
-import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
+import { After, Given, When, Then } from "cypress-cucumber-preprocessor/steps";
 import searchElementsPage from "../../pages/searchElements.pages";
+
+After(() => {
+    cy.screenshot();
+});
 
 Given("que o usuário acesse a página de links", () => {
     searchElementsPage.acessPageSearchElements();

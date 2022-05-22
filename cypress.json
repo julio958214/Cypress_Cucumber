@@ -7,5 +7,10 @@
 
     "fixturesFolder": false,
     "screenshotOnRunFailure": false,
-    "video": false
+    "video": false,
+
+    "env": {
+        "allure": true,
+        "allureAttachRequests": false
+    }
 }
