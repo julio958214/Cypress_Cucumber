@@ -9,15 +9,15 @@ class formPage {
         cy.get('a[href="/users/new"]').click();
     }
 
-    emailPassw(nome, ultimo_nome, email, endereço, universidade, profissão, gênero, idade) {
-        cy.get('input[id="user_name"]').type(nome);
-        cy.get('input[id="user_lastname"]').type(ultimo_nome);
+    emailPassw(name, ultimoNome, email, address, university, profession, genre, age) {
+        cy.get('input[id="user_name"]').type(name);
+        cy.get('input[id="user_lastname"]').type(ultimoNome);
         cy.get('input[id="user_email"]').type(email);
-        cy.get('input[id="user_address"]').type(endereço);
-        cy.get('input[id="user_university"]').type(universidade);
-        cy.get('input[id="user_profile"]').type(profissão);
-        cy.get('input[id="user_gender"]').type(gênero);
-        cy.get('input[id="user_age"]').type(idade);
+        cy.get('input[id="user_address"]').type(address);
+        cy.get('input[id="user_university"]').type(university);
+        cy.get('input[id="user_profile"]').type(profession);
+        cy.get('input[id="user_gender"]').type(genre);
+        cy.get('input[id="user_age"]').type(age);
     }
 
     creatingAccount() {

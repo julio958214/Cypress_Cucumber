@@ -1,4 +1,4 @@
-var data = require("../constants/massConst");
+var data = require('../constants/massConst');
 
 class searchElementsPage {
 
@@ -33,9 +33,9 @@ class searchElementsPage {
         cy.get('a[href="/buscaelementos/inputsetextfield"]').click();
     }
 
-    iFillInValue(first_name, last_name, password, email, textarea) {
-        cy.get('input[id="first_name"]').type(first_name);
-        cy.get('input[id="last_name"]').type(last_name);
+    iFillInValue(firstName, lastName, password, email, textarea) {
+        cy.get('input[id="first_name"]').type(firstName);
+        cy.get('input[id="last_name"]').type(lastName);
         cy.get('input[id="password"]').type(password);
         cy.get('input[id="email"]').type(email);
         cy.get('textarea[id="textarea1"]').type(textarea);
