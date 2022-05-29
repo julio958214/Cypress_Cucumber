@@ -10,13 +10,13 @@ https://nodejs.org/en/download/
 git clone https://github.com/julio958214/Front-testing-vr.git 
 ```
 
-**Instale as dependências do projeto com**
+**Instale as dependências do projeto**
 
 ```
 npm install
 ```
 
-**Execute o projeto com**
+**Execute o projeto**
 
 ```
 npm run test
